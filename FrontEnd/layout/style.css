@@ -1,0 +1,70 @@
+body{
+    font-family: arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-top: 0;
+}
+
+.grid-container{
+    display: grid;/*Define o container como grid(grade)*/
+    grid-template-columns: repeat(2,1fr);/*Cria duas colunas de largura igual dentro do grid*/
+    gap: 10px;/*Define um espaço de 10px entre os itens do grid*/
+}
+
+.grid-item{
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.flex-container{
+    display: flex;/*Define o container como um flexbox*/
+    justify-content: space-between;/*Distribiu os itens dentro do container com espaço igual entre eles*/
+    gap: 10px;/*Define um espaço de 10px entre os itens do grid*/
+}
+
+.flex-item{
+    background-color: #2196f3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex: 1;/*Permite que os itens do flexbox cresçam igualmente dentro do container*/
+    border-radius: 4px;
+}
+
+.float-container{
+    overflow: hidden;/*Garante que o container flutuante contenha os elementos flutuados*/
+}
+
+.float-item{
+    width: 45%;/*Define a largura dos itens flutuantes como 45% do container*/
+    margin: 2.5%;/*Define uma margem de 2.5% ao redor dos item flutuantes*/
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    float: left;/*Faz com que os textos flutuem a esquerda dentro do container*/
+    border-radius: 4px;
+
+}

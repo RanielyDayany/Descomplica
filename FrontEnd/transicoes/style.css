@@ -1,0 +1,26 @@
+/*
+    Estilo inicial para a caixa
+    Componentes das transições
+    Propriedade de transição (transition-property)
+    Duração de transição (transition-duration)
+    Função de temporizaçãp (transition-timing-function)
+    Atraso da transição (transition-delay)
+*/
+
+.caixa{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    transition-property: background-color,transform; /*Especifica que o background-color e a tranform serão animadas*/
+    transition-duration: 2s;/*Define que a transição levará 2s para completar*/
+    transition-timing-function: ease-in-out;/*Define que a transição usará uma função de temporização ease-in-out,que começa e termina devagar*/
+}
+
+/*Estilo ao passar o mouse*/
+.caixa:hover{
+    background-color: red;/*Cor de fundo muda para o vermelho*/
+    transform: rotate(360deg);/*Caixa gira 360graus*/
+}

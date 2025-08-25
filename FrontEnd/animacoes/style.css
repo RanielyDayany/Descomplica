@@ -1,0 +1,43 @@
+/*
+Componentes de animações em CSS
+    Keyframes (quadros-chave)
+    Propriedades de animação
+
+Definindo os keyframes:
+Keyframes definem os estados intermediários e finais de uma animação.Eles especificam como o estilo de um elemento deve mudar em determinados
+*/
+
+@keyframes mover-e-mudar-cor{
+    from{
+        background-color: red;
+        transform: translateX(0);
+    }
+    to{
+        background-color: yellow;
+        transform: translateX(100px);
+    }
+}
+/*Aplicando a animação ao elemento*/
+/*
+As propriedades de animação aplicam a animação definida nos keyframes aos 
+
+Principais propriedades de animação:
+    animation-name: Nome da animação definida nos keyframes
+    animation-duration: Duração da animação
+    animation-timing-function: Função de temporização da animação exemplo,linear,ease,ease-in,ease-out
+    animation-delay: Atrado antes de inicar a animação
+    animation-interation-count: Número de vezes que a animação deve se repetir
+    animation-direction: Direção da animação(normal,reverse,alternate,alternate-reverse)
+    animation-fill-mode: Define o estilo aplicado ao elemento quando a animação não está em execução(antes de começar,depois de terminar)
+    animation-plau-state: Permite pausar e retomar a animação
+*/
+.animacao{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: mover-e-mudar-cor;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

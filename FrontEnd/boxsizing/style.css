@@ -1,0 +1,69 @@
+/*Corpo da página*/
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/*Container principal*/
+.container{
+    max-width: 800px;
+    margin: 0 auto;/*Centraliza o container*/
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/*Cabeçalho*/
+h1{
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*Caixas*/
+.box{
+    width: 200px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 5px solid #007bff;
+    background-color: #e7f1f1;
+}
+
+/*
+Content-box(padrão):
+Como é calculado:
+    A largura e a altura que você define são aplicadas APENAS ao conteúdo do elemento.
+    o padding e a borda são adicionado a largura e altura especificadas,aumentando o tamanho total do elemento.
+Exemplo:
+    Se você define uma largura de 200px,adiciona 20px de padding e 5px de borda,o tamanho total da caixa será:
+    200px + 20px + 20px+ 5px + 5px = 250px
+
+*/
+/*Caixa com content-box(padrao)*/
+.content-box{
+    box-sizing: content-box; /*Defone box-sizing como content-box*/
+}
+
+/*
+border-box:
+Como é calculado:
+    A largura e a altura que você define INCLUEM o conteúdo,o padding e a borda.
+    Isso significa que o tamanho total do elemento não muda,independentemente do padding e da borda que você adicionar.
+
+Exemplo:
+    Se você define uma largura de 200px e adiciona 20px de padding e 5px de borda,o tamanho total da caixa permanecerá 200px(largura total) = conteúdo + padding + borda
+*/
+
+/*Caixa com border-box*/
+.border-box{
+    box-sizing: border-box;
+}
+
+/*P dentro das caixas*/
+.box p{
+    margin: 0;
+    color: #007bff;
+}
