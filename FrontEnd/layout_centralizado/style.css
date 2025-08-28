@@ -1,0 +1,27 @@
+body,html{
+    height: 100%;/*Define a altura de body e html ara 100% da altura da janela*/
+    margin: 0;/*Remove as margens padrão de body e html*/
+    display: flex;/*Define o display como flexbox*/
+    align-items: center;/*Alinha os itens(conteúdo) verticalmente ao centro*/
+    justify-content: center;/*Alinha os itens(conteúdo) horizontalmente ao centro*/
+    font-family: Arial,sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container-centralizado{
+    display: flex;
+    align-items: center;/*Alinha os itens(conteúdo) dentro do container verticalmente ao centro*/
+    justify-content: center;/*Alinha os itens(conteúdo) dentro do container horizontalmente ao centro*/
+    width: 80%;
+    /*Define a largura(width) e altura (height)do container como 80% da janela*/
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.conteudo{
+    padding: 20px;
+}
+
