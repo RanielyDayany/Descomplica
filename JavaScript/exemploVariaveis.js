@@ -16,7 +16,9 @@ exemploVar();
 //Exemplo de erro e correção
 var mensagem1 = "Olá,Faculdade Descomplica!Escopo externo!";
 /*
-    A var dentro do if so funciona quando eu chamo dentro daquela função,se eu só colocasse o console.log aqui sem essa nova var aqui em cima iria dar um erro
+    A var dentro do if so funciona quando eu chamo dentro 
+    daquela função,se eu só colocasse o console.log aqui 
+    sem essa nova var aqui em cima iria dar um erro
 */
     console.log(mensagem1);
 
@@ -35,7 +37,9 @@ exemploLet()
 let mensagem = "Olá Descomplica!Let externo"
 console.log(mensagem);
 /*
-    A princípio dá um erro pois a variável var tem o mesmo nome "mensagem",por isso irei trocar o nome do var por mensagem1 lá em cima
+    A princípio dá um erro pois a variável var 
+    tem o mesmo nome "mensagem",por isso irei 
+    trocar o nome do var por mensagem1 lá em cima
 */
 
 //Declaração de uma constante usando const
