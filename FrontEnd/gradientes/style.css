@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;/*Centraliza os itens horizontalmente*/
+    align-items: center;/*Centraliza os itens verticalmente*/
+    min-height: 100vh;/*Define a altura mínima do corpo para ocupar toda a altura da janela*/
+
+}
+.container{
+    display: grid;/*Usa o modelo de layout gris para organizar os elementos filhos*/
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));/*Define o layout das colunas do grid*/
+    gap: 20px;/*Define o espaçamento entre os itens do grid*/
+    width: 80%;
+}
+
+.exemplo-gradiente{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.gradiente-linear{
+    background:linear-gradient(90deg,#ff7e5f,#feb47b);
+
+}
+
+.gradiente-radial{
+    background:radial-gradient(circle,#ff7e5f,#feb47b);
+
+}
+
+.gradiente-conico{
+    /*Define um fundo com gradiente cônico começando de 0graus*/
+    background:conic-gradient(from 0deg,#ff7e5f,#feb47b,#ff7e5f);
+
+}
+
+.gradiente-diagonal{
+    background:linear-gradient(45deg,#ff7e5f,#feb47b);
+
+}
+
+.gradiente-texto{
+    background:linear-gradient(90deg,#ff7e5f,#feb47b);
+    -webkit-background-clip: text;/*Usa o gradiente de fundo para a cor do texto no navegador Chrome,Safari e Opera*/
+    -webkit-text-fill-color: transparent;/*Usa o gradiente de fundo para a cor do texto no restante dos navegadores*/
+    background-clip:text;
+    text-emphasis-color: transparent;
+    background-color: white;/*Define a cor de fundo como branco para navegadores que não suportam gradiente no texto*/
+
+
+}
+
+
