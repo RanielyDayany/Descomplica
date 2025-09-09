@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;/*Centraliza os itens horizontalmente*/
+    align-items: center;/*Centraliza os itens verticalmente*/
+    min-height: 100vh;/*Define a altura mínima do corpo para ocupar toda a altura da janela*/
+
+}
+.container{
+    display: grid;/*Usa o modelo de layout gris para organizar os elementos filhos*/
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));/*Define o layout das colunas do grid*/
+    gap: 20px;/*Define o espaçamento entre os itens do grid*/
+    width: 80%;
+}
+
+.exemplo-sombra{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.sombra-simples{
+    /*Sombra com leve desvio e suavidade*/
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.sombra-expandida{
+    /*Adiciona uma sombra mais espalhada e um pouco mais escura*/
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.sombra-interna{
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.sombra-desfocada{
+    box-shadow:2px 2px 15px rgba(0,0,0,0.2) ;
+}
+
+.sombra-colorida{
+    box-shadow: 2px 2px 10px rgba(223, 117, 24, 0.603);
+}
+
+.multiplas-sombras{
+    /*Adiciona duas sombras com direções e desvios diferentes*/
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2),-2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.sombra-inferior-direito{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.sombra-superior-esquerdo{
+    box-shadow:-5px -5px 10px rgba(0,0,0,0.3) ;
+}
+
+
+
