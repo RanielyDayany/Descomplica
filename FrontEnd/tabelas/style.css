@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+table{
+    width: 100%;/*Define a largura da tabela pra ocupar 100% do container*/
+    border-collapse: collapse;/*Remove os espaços entre as células da tabela*/
+    margin-bottom: 20px;
+
+}
+thead{
+    background-color: black;
+    color: white;
+}
+thead th{
+    padding:10px ;
+}
+/*Estilo para as linhas ímpares do corpo da tabela*/
+tbody tr:nth-child(odd){
+    background-color: #f9f9f9;
+
+}
+/*Define a cor de fundo das linhas pares como branco*/
+tbody tr:nth-child(even){
+    background-color: white;
+
+}
+tbody td{
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+tfoot{
+    background-color: white;
+    font-weight: bold;
+}
+tfoot td{
+    padding: 10px;
+    border-top: 2px solid black;
+}
+
+    
