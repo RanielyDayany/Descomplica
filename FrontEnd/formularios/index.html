@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Input e Textarea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    <form>
+        <!--
+            <label>:Este elemento HTML é utilizado para definir rótulos para elementos <input>.
+                for="name":O atributo for conecta este rótulo ao elemento <input> com o id correspondente
+                Nome:O texto entre as tags <label> é o que será exibido na página com o rótulo do campo de entrada
+
+            <input>:Este é o elemento de entrada que cria um campo onde o usuário pode digitar informações.
+                    type="text":Define o tipo de entrada como texto,o que significa que o usuário pode digitar qualquer caractere
+                    id="nome":Define um identificador único para o campo de entrada.
+                    name="nome":Este atributo dá um nome ao campo de entrada
+                    placeholder="Digite seu nome":Este atributo fornece um texto de exemplo dentro do campo de entrada que desaparece quando o usuário começa a digitar
+        -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Digite seu email">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form> 
+</body>
+</html>

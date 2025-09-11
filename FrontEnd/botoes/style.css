@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+h1{
+    margin-bottom: 20px;
+
+}
+
+.grupo-botoes{
+    display: flex;
+    flex-wrap: wrap;/*Permite que os botões quebrem linha*/
+    gap: 10px;/*Espaçamento entre os botões*/
+    justify-content: center;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;/*Transição suave*/
+}
+
+.btn{
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.btn:hover{
+    background-color: #d5d5d5;
+}
+
+.btn-primario{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primario:hover{
+    background-color: #0056b3;
+
+}
+
+.btn-sucesso{
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-sucesso:hover{
+    background-color:#218838 ;
+}
+
+.btn-aviso{
+    background-color: #ffc107;
+    color: #000;
+}
+
+.bnt-aviso:hover{
+    background-color: #e0a800;
+}
+
+.btn-perigo{
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-perigo:hover{
+    background-color: #c92333;
+}
+
+.btn-desabilitado{
+    background-color: #e0e0e0;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.btn-icone{
+    display: flex;
+    align-items: center;
+    gap: 5px;/*Espaçamento entre o ícone e o texto*/
+
+}
+
+.btn-icone .icone{
+    font-size: 20px;
+}
