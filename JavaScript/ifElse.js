@@ -12,3 +12,4 @@ if (weatherForecast === "rainy"){
 }else{
     console.log("Não devemos levar um guarda-chuva");
 }
+
