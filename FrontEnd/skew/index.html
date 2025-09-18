@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo do efeito Skew</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplo do Efeito Skew</h1>
+        <button id="skewButton">Clique para distorcer</button>
+    </div>
+    <script>
+        const button = document.getElementById('skewButton');
+
+        button.addEventListener('click',function(){
+
+            //Adiciona a classe 'skew' ao botão quando ele é clicado
+            button.classList.toggle('skew');
+        });
+    </script>
+
+    
+</body>
+</html>
